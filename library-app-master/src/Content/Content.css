@@ -1,0 +1,82 @@
+.Content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5vw 1vw;
+    height: auto;
+}
+
+.CenterBox {
+    width: 8vw;
+    padding: .5vw .5vw; 
+    border-radius: 1vw;
+    background-color: rgba(250, 235, 215, 0.329);
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+.imgleftbox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    color: #ff6400;
+}
+
+.CenterUp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LeftTextBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: sans-serif;
+    gap: .5vw;
+}
+
+.LeftTextBox p {
+    padding: 0;
+    margin: 0;
+    font-size: .8vw;
+    font-weight: bold;
+}
+
+.LeftTextBox h6 {
+    padding: 0;
+    margin: 0;
+    font-size: .7vw;
+    color: #3C3C4399;
+}
+
+.LeftButtonbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LeftButtonbox button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    gap: .5vw;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 1vw;
+    color: #ff6400;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.LeftButtonbox button p {
+    font-size: .7vw;
+}

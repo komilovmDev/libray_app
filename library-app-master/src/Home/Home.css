@@ -1,0 +1,253 @@
+.Home {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw;
+    padding-top: 1vw;
+    
+}
+
+.LeftNavMenu {
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F7FA;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    margin-left: 2vw;
+}
+
+.CenterSearch {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.LeftNavMenu-ChekBox {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.LeftNavMenu-ChekBox label {
+    display: flex;
+}
+
+.LeftNavMenu-ChekBox p {
+    padding: 0;
+    margin: 0;
+    font-size: .9vw;
+}
+
+.LeftNavMenu-Title p {
+    margin: 0;
+    padding: 0;
+
+}
+
+.Toggle-Filter {
+    display: flex;
+    align-items: center;
+    gap: .8vw;
+}
+
+.Toggle-Filter p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: .8vw;
+}
+
+.toggler-wrapper {
+    display: block;
+    width: 2vw;
+    height: 1vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggler-wrapper input[type="checkbox"] {
+    display: none;
+}
+
+.toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
+    background-color: #ff6400;
+}
+
+.toggler-wrapper .toggler-slider {
+    background-color: #ccc;
+    position: absolute;
+    border-radius: 9vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.toggler-wrapper .toggler-knob {
+    position: absolute;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+
+.toggler-wrapper.style-4 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+    left: calc(100% - 1vw - 0vw);
+}
+
+.toggler-wrapper.style-4 .toggler-knob {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 6px rgba(153, 153, 153, 0.75);
+    box-shadow: 0 2px 6px rgba(153, 153, 153, 0.75);
+}
+
+.LeftNavMenu-Title {
+    display: flex;
+    width: 100%;
+    border-bottom: .2vw solid #ff6400a1;
+}
+
+.LeftNavMenu-Title p {
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.LabInp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LabInp label {
+    width: 100%;
+    border: 0.1vw solid #cacaca;
+    padding: 0.21vw 0.83vw;
+    border-radius: 0.3vw;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LabInp label input {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    outline: none;
+    border: none;
+    font-size: 0.72vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.LabInp label button {
+    outline: none;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: #b0babf;
+    cursor: pointer;
+}
+
+.CenterSearchUp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13vw;
+    height: 1.7vw;
+    border: .1vw solid #FF6400;
+    background:none;
+    outline: none;
+    font-size: .8vw;
+    border-radius:.5vw;
+    box-shadow:0px 0px .2vw #ff660036;
+}
+
+.vniz .down{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.vniz .up{
+    display: none;
+}
+
+.rotate .down{
+    display: none;
+}
+
+.rotate .up{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.dropdown-content {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 5vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.11);
+    border-radius: 1vw;
+    padding: 1vw 0;
+    background-color: white;
+}
+
+.dropdown-content button {
+    height: 5vw;
+    outline: none;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: .8vw;
+    cursor: pointer;
+}
+
+.dropdown-content button .chek {
+    display: none;
+    color: #FF6400;
+}
+
+.dropdown-content button:hover {
+    background-color: #b0babf1c;
+}
+
+.dropdown-content button:hover .chek {
+    display: flex;
+}
+
+.CenterBoxDown {
+    top: 10%;
+    left: 27vw;
+    position: absolute;
+}
+
+.LeftButtonbox a {
+    text-decoration: none;
+}
